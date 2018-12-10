@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-const e = React.createElement;
-
 class App extends React.Component {
 
   constructor(props) {
@@ -11,14 +9,11 @@ class App extends React.Component {
   }
 
   render() {
-    return (
-      e("div",
-        {},
-        this.state.text
-        )
-    );
+    return <div>
+      {this.state.text}
+      </div>;
   }
 }
 
 const domContainer = document.querySelector('#root');
-ReactDOM.render(e(App), domContainer);
+ReactDOM.render(<App/>, domContainer);
