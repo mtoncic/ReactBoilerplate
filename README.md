@@ -1,6 +1,9 @@
-# React boilerplate
+# React beginner boilerplate
 
-This boilerplate contains all you need to start creating react application using jsx.
+This boilerplate contains all you need to start creating react application using jsx and modern javascript features.
+This is not supposed to be starter for bigger application, just as something used for react learning purpose.
+Linting, testing and other common tools are not added to prevent beginners get overwhelmed.
+
 ```
 webpack as module bundler that uses babel loader
 webpack-dev-server as dev server that provides live-reloading
