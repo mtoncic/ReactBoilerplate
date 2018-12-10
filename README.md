@@ -1,4 +1,4 @@
-# React beginner boilerplate
+# React beginner's boilerplate
 
 This boilerplate contains all you need to start creating react application using jsx and modern javascript features.
 This is not supposed to be starter for bigger application, just as something used for react learning purpose.
