@@ -1,5 +1,4 @@
 var path = require('path');
-const HtmlWebPackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: './main.js',
@@ -20,28 +19,16 @@ module.exports = {
         }
       },
       {
-        test: /\.html$/,
-        use: [
-          {
-            loader: "html-loader",
-            options: { minimize: true }
-          }
-        ]
+        test: /\.css$/,
+        use: ["style-loader", "css-loader"]
       }
     ]
-  },
-  devServer: {
-    //contentBase: path.join(__dirname, 'build'),
-    publicPath: path.join(__dirname, 'build')
   },
   stats: {
     colors: true
   },
   devtool: 'source-map',
-  plugins: [
-    new HtmlWebPackPlugin({
-      template: "./src/index.html",
-      filename: "./index.html"
-    })
-  ]
+  devServer: {
+    publicPath: '/build'
+  }
 };

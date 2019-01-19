@@ -1,16 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Button from './components/button.component/button.component'
 
 class App extends React.Component {
 
   constructor(props) {
     super(props);
-    this.state = { text: "Hello, React!" };
+    this.state = { counter: 0, clicked: false };
+
+    this.handleButtonClick = this.handleButtonClick.bind(this);
+  }
+
+  handleButtonClick() {
+    this.setState({counter: this.state.counter + 1});
   }
 
   render() {
     return <div>
-      {this.state.text}
+         <div>Counter: {this.state.counter}</div>
+         <Button handleButtonClick={this.handleButtonClick}/>
       </div>;
   }
 }
