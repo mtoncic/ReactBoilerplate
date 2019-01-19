@@ -7,6 +7,7 @@ Linting, testing and other common tools are not added to prevent beginners get o
 ```
 webpack as module bundler that uses babel loader
 webpack-dev-server as dev server that provides live-reloading
+htmlwebpackplugin that automatically generates entry html file using added template from the src/index.html and injects bundled javascript into
 babel as transpiler [preset-env, preset-react]
 npm as package management tool and for automation via scripts
 react and react-dom npm packages
