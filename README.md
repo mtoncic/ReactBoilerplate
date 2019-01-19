@@ -6,7 +6,7 @@ Linting, testing and other common tools are not added to prevent beginners get o
 
 ```
 webpack as module bundler that uses babel and html loaders
-webpack-dev-server as dev server that provides live-reloading
+webpack-dev-server as dev server that builds app, runs it from the memory and provides live-reloading
 css-loader that takes a CSS file and resolves imports and url() 
 style-loader that takes styles loaded with css-loader and creates 
 a <style> tag in page's <head> element containing those styles
@@ -20,6 +20,6 @@ react and react-dom npm packages
 
 **build app -prod:** npm run build
 
-**build app -dev & start app with live-reloading:** npm run start
+**start app with live-reloading:** npm run start
 
 Happy codding! :)
